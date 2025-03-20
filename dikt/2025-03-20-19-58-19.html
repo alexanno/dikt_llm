@@ -1,0 +1,34 @@
+<html>
+    <body>
+    <h2>Dagens dikt</h2>
+    <pre>I det dype på havets bunn,  
+en østers teller stjerners grunn.  
+Den skjuler perler, hver unik,  
+som ruller ut i kosmisk mystikk.  
+  
+En spiral som danser, et mønster så rent,  
+hver perle en drøm som aldri ble glemt.  
+Stjerner i sirkel, i evig harmoni,  
+fra østersens hjerte - universets magi.</pre>
+    <img src='./2025-03-20-19-58-19.png' alt="Generated visualization">
+    <h2>Kode</h2>
+    <pre><code>import numpy as np
+import matplotlib.pyplot as plt
+
+# Matematiske representasjoner
+r = np.linspace(0, 10, 1000)  # Representerer "spiralen"
+theta = r * 2 * np.pi  # Vinkler for sirkel (evig harmoni)
+x = r * np.cos(theta)  # X-koordinater for perledans
+y = r * np.sin(theta)  # Y-koordinater for perledans
+
+# Plotter spiralen som danser (som diktet beskriver)
+plt.figure(figsize=(8, 8))
+plt.plot(x, y, label="Dansende perler og stjerner")
+plt.title("Østersens univers: Magisk kosmisk spiral")
+plt.xlabel("X-Dimensjon")
+plt.ylabel("Y-Dimensjon")
+plt.legend(loc="best")
+plt.grid(True)
+plt.axis("equal")  # Uniform skala for sirkelens harmoni
+plt.savefig('2025-03-20-19-58-19.png')</code></pre>
+    </body></html>
