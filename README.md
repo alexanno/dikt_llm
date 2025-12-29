@@ -185,7 +185,7 @@ dikt_llm/
 - The project generates Norwegian-language poems by default
 - Each run creates unique, random poems with their own mathematical interpretations
 - Visualization styles vary based on the poem's theme and the AI's creative interpretation
-- The default configuration generates 20 poems per execution (configurable in the notebook)
+- The default configuration generates 20 poems per execution (configurable by changing `range(20)` in the notebook's main loop: `for i in range(20): generate_dikt()`)
 
 ## License
 
