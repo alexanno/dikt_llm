@@ -2,7 +2,7 @@
 
 **dikt** (Norwegian: *poem*) + **llm** — an AI that writes random Norwegian poems and renders each one as a mathematical visualization.
 
-→ **[View gallery](https://anossum.github.io/dikt_llm)**
+→ **[View gallery](https://alexanno.github.io/dikt_llm)**
 
 ---
 
