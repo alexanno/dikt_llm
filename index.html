@@ -219,15 +219,30 @@
 
     footer a { color: var(--accent); text-decoration: none; }
     footer a:hover { text-decoration: underline; }
+
+    #method {
+      text-align: center;
+      padding: 1rem 2rem 1.5rem;
+      color: var(--muted);
+      font-size: 0.85rem;
+      line-height: 1.6;
+      font-style: italic;
+    }
+
+    #method em { color: var(--accent); font-style: normal; }
   </style>
 </head>
 <body>
 
 <header>
   <h1><span>dikt</span>_llm</h1>
-  <p>AI-genererte norske dikt med matematiske visualiseringer</p>
+  <p>Et eksperiment med AI-genererte norske dikt med tilhørende matematiske visualiseringer</p>
   <div id="count"></div>
 </header>
+
+<div id="method">
+  <p>Hvert dikt lages i tre steg: En språkmodell (GPT-4o-mini) lager et tilfeldig dikt som deretter blir brukt for å lage Python-kode som representerer diktet matematisk. Koden kjøres deretter lokalt med matplotlib, og resultatet lagres som HTML/PNG sammen med diktet.</p>
+</div>
 
 <div id="loading">Laster dikt...</div>
 <div class="gallery" id="gallery" style="display:none"></div>
