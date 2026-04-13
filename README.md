@@ -9,11 +9,16 @@
 ## How it works
 
 Each run:
-1. Prompts GPT-4o-mini to write a random Norwegian poem *and* Python code that mathematically represents it
-2. Executes the generated code to produce a matplotlib plot
-3. Saves the poem + visualization as a timestamped HTML/PNG pair in a run folder under `dikt/`
-4. Updates that run folder's `registry.json`
-5. Rebuilds `dikt/meta-registry.json` so the gallery can discover all run folders
+1. Generates a random Norwegian poem (phase 1)
+2. Generates Python/matplotlib code from that poem (phase 2)
+3. Executes the generated code locally to render the visualization
+4. Saves the result in a timestamped run folder (HTML, PNG, and run metadata)
+5. Updates that run folder's `registry.json`
+6. Rebuilds `dikt/meta-registry.json` so the gallery can discover all run folders
+
+The current notebook flow is Ollama-only for both phases. You can change models per phase (`POEM_MODEL`, `CODE_MODEL`) and endpoint settings via environment variables.
+
+Note: older run folders may still contain historical outputs produced with other model setups.
 
 ```
 dikt/
@@ -52,14 +57,6 @@ hvisket vinden hemmeligheter som kun naturen forstår.
 
 ## Setup
 
-Requires an Azure OpenAI deployment. Copy `.env.example` to `.env` and fill in your credentials:
-
-```
-AZURE_OPENAI_ENDPOINT=https://your-resource.openai.azure.com/
-AZURE_OPENAI_API_KEY=your-api-key
-OPENAI_API_VERSION=2024-02-01
-```
-
 Install dependencies:
 
 ```bash
@@ -67,6 +64,13 @@ pip install openai python-dotenv matplotlib numpy
 ```
 
 Then open and run `dikt_llm.ipynb`.
+
+If needed, configure Ollama endpoint/auth via `.env`:
+
+```
+OLLAMA_BASE_URL=http://localhost:11434/v1
+OLLAMA_API_KEY=ollama
+```
 
 ## GitHub Pages
 
