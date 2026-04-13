@@ -1,0 +1,32 @@
+<html>
+    <body>
+    <h2>Dagens dikt</h2>
+    <pre>En ensom sokk i vaskemaskinens dans,
+mistet sin makker og all sin glans.
+Nå drømmer den om en ullen venn,
+og håper at tørketrommelen gir den tilbake igjen.</pre>
+    <img src='./2026-04-13-21-52-38.png' alt='Generated visualization'>
+    <h2>Kode</h2>
+    <pre><code>import matplotlib.pyplot as plt
+import numpy as np
+
+# Generer noen data for å lage en figur
+x = np.linspace(0, 10, 100)
+y = np.sin(x)
+
+# Lag en figur og akse
+fig, ax = plt.subplots()
+
+# Plott dataene
+ax.plot(x, y)
+
+# Legg til tittel og etiketter
+ax.set_title('En ensom sokk i vaskemaskinens dans')
+ax.set_xlabel('Tid')
+ax.set_ylabel('Amplitude')
+
+# Lagre figuren
+plt.savefig(output_path)</code></pre>
+    <h2>Status</h2>
+    <pre>execution_ok=True fallback_used=False image_ok=True</pre>
+    </body></html>

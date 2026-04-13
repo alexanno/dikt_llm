@@ -1,0 +1,32 @@
+<html>
+    <body>
+    <h2>Dagens dikt</h2>
+    <pre>En rusten teskje i en glemt skuff,
+drømmer om te og en gyllen puff.
+Den lengter mot koppen, mot dampen og glød,
+mens støvet legger et grått, stille lag av nød.</pre>
+    <img src='./2026-04-13-21-52-46.png' alt='Generated visualization'>
+    <h2>Kode</h2>
+    <pre><code>import matplotlib.pyplot as plt
+import numpy as np
+
+# Generer noen data for figuren
+x = np.linspace(0, 10, 100)
+y = np.sin(x)
+
+# Lag figuren og akse
+fig, ax = plt.subplots()
+
+# Plott dataene
+ax.plot(x, y)
+
+# Sett tittler og akseetiketter
+ax.set_title("En rusten teskje i en glemt skuff")
+ax.set_xlabel("X-aksen")
+ax.set_ylabel("Y-aksen")
+
+# Lagre figuren
+plt.savefig(output_path)</code></pre>
+    <h2>Status</h2>
+    <pre>execution_ok=True fallback_used=False image_ok=True</pre>
+    </body></html>

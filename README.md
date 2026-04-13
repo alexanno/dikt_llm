@@ -11,15 +11,21 @@
 Each run:
 1. Prompts GPT-4o-mini to write a random Norwegian poem *and* Python code that mathematically represents it
 2. Executes the generated code to produce a matplotlib plot
-3. Saves the poem + visualization as a timestamped HTML/PNG pair in `dikt/`
-4. Updates `dikt/registry.json` so the gallery can discover new entries
+3. Saves the poem + visualization as a timestamped HTML/PNG pair in a run folder under `dikt/`
+4. Updates that run folder's `registry.json`
+5. Rebuilds `dikt/meta-registry.json` so the gallery can discover all run folders
 
 ```
 dikt/
-  registry.json          ← index of all poems
-  2025-03-20-19-44-09.html
-  2025-03-20-19-44-09.png
-  ...
+  meta-registry.json     ← index of all run folders + run registries
+  gpt-4o-mini/
+    registry.json
+    2025-03-20-19-44-09.html
+    2025-03-20-19-44-09.png
+  run-2026-04-13-21-57-51/
+    registry.json
+    2026-04-13-22-01-28.html
+    2026-04-13-22-01-28.png
 index.html               ← GitHub Pages gallery
 dikt_llm.ipynb           ← generation notebook
 ```
@@ -64,7 +70,15 @@ Then open and run `dikt_llm.ipynb`.
 
 ## GitHub Pages
 
-The `index.html` gallery loads `dikt/registry.json` at runtime and fetches individual poems on demand — no build step required. Enable Pages on the `main` branch root to publish.
+The `index.html` gallery loads `dikt/meta-registry.json` and then fetches each run's `registry.json` at runtime.
+
+Because GitHub Pages does not expose folder listings, rebuild `meta-registry.json` before publishing:
+
+```bash
+python scripts/generate_meta_registry.py
+```
+
+Then commit the updated `dikt/meta-registry.json` file and publish from `main` branch root.
 
 ## License
 

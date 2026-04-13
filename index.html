@@ -241,7 +241,7 @@
 </header>
 
 <div id="method">
-  <p>Hvert dikt lages i tre steg: En språkmodell (GPT-4o-mini) lager et tilfeldig dikt som deretter blir brukt for å lage Python-kode som representerer diktet matematisk. Koden kjøres deretter lokalt med matplotlib, og resultatet lagres som HTML/PNG sammen med diktet.</p>
+  <p>Diktene er lagd med ulike eksperimenter av AI-agenter som lager både et tilfeldig dikt og en tilhørende matematisk visualisering. Les mer om metoden og koden på <a style="color: white;" href="https://github.com/alexanno/dikt_llm" target="_blank">github.com/alexanno/dikt_llm</a> </p>
 </div>
 
 <div id="loading">Laster dikt...</div>
@@ -275,21 +275,40 @@
   const overlay = document.getElementById('overlay');
   const countEl = document.getElementById('count');
 
-  async function loadRegistry() {
-    const res = await fetch('dikt/registry.json');
+  async function loadJson(url) {
+    const res = await fetch(url);
+    if (!res.ok) {
+      throw new Error(`Kunne ikke laste ${url} (${res.status})`);
+    }
     return res.json();
   }
 
-  function renderGallery(registry) {
+  async function loadRunsAndEntries() {
+    const meta = await loadJson('dikt/meta-registry.json');
+    if (!meta.runs || !Array.isArray(meta.runs) || meta.runs.length === 0) {
+      throw new Error('meta-registry.json mangler gyldig run-liste');
+    }
+
+    const allRunEntries = await Promise.all(meta.runs.map(async run => {
+      const registry = await loadJson(`dikt/${run.registry}`);
+      return registry.map(entry => ({ ...entry, runFolder: run.folder, runLabel: run.label || run.folder }));
+    }));
+
+    const entries = allRunEntries.flat().sort((a, b) => b.id.localeCompare(a.id));
+    return { runs: meta.runs, entries };
+  }
+
+  function renderGallery(runs, entries) {
     loading.style.display = 'none';
     gallery.style.display = '';
-    countEl.textContent = `${registry.length} dikt`;
+    gallery.innerHTML = '';
+    countEl.textContent = `${entries.length} dikt · ${runs.length} mapper`;
 
-    registry.forEach(entry => {
+    entries.forEach(entry => {
       const card = document.createElement('div');
       card.className = 'card';
       card.innerHTML = `
-        <div class="card-date">${entry.date} · ${entry.time}</div>
+        <div class="card-date">${entry.date} · ${entry.time} · ${escapeHtml(entry.runLabel)}</div>
         <div class="card-line">${escapeHtml(entry.firstLine)}</div>
         <div class="card-arrow">les dikt →</div>
       `;
@@ -299,7 +318,7 @@
   }
 
   async function openDikt(entry) {
-    document.getElementById('detail-id').textContent = entry.id;
+    document.getElementById('detail-id').textContent = `${entry.id} · ${entry.runLabel}`;
     document.getElementById('detail-poem').textContent = 'Laster...';
     document.getElementById('detail-image').classList.add('hidden');
     document.getElementById('detail-code').textContent = '';
@@ -307,7 +326,7 @@
     overlay.scrollTop = 0;
 
     try {
-      const res = await fetch(`dikt/${entry.id}.html`);
+      const res = await fetch(`dikt/${entry.runFolder}/${entry.id}.html`);
       const html = await res.text();
       const parser = new DOMParser();
       const doc = parser.parseFromString(html, 'text/html');
@@ -321,7 +340,7 @@
 
       if (entry.hasImage) {
         const img = document.getElementById('detail-image');
-        img.src = `dikt/${entry.id}.png`;
+        img.src = `dikt/${entry.runFolder}/${entry.id}.png`;
         img.classList.remove('hidden');
       }
     } catch (e) {
@@ -341,8 +360,8 @@
     return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
   }
 
-  loadRegistry().then(renderGallery).catch(err => {
-    loading.textContent = 'Feil: kunne ikke laste registry.json';
+  loadRunsAndEntries().then(({ runs, entries }) => renderGallery(runs, entries)).catch(err => {
+    loading.textContent = 'Feil: kunne ikke laste dikt/meta-registry.json';
     console.error(err);
   });
 </script>

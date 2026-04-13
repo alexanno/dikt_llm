@@ -1,0 +1,40 @@
+{
+  "generatedAt": "2026-04-13T20:11:19.354556+00:00",
+  "runs": [
+    {
+      "folder": "run-2026-04-13-21-57-51",
+      "label": "run-2026-04-13-21-57-51",
+      "registry": "run-2026-04-13-21-57-51/registry.json",
+      "count": 13,
+      "latestId": "2026-04-13-22-01-28"
+    },
+    {
+      "folder": "run-2026-04-13-21-55-16",
+      "label": "run-2026-04-13-21-55-16",
+      "registry": "run-2026-04-13-21-55-16/registry.json",
+      "count": 2,
+      "latestId": "2026-04-13-21-56-03"
+    },
+    {
+      "folder": "run-2026-04-13-21-52-31",
+      "label": "run-2026-04-13-21-52-31",
+      "registry": "run-2026-04-13-21-52-31/registry.json",
+      "count": 2,
+      "latestId": "2026-04-13-21-52-46"
+    },
+    {
+      "folder": "run-2026-04-13-21-47-42",
+      "label": "run-2026-04-13-21-47-42",
+      "registry": "run-2026-04-13-21-47-42/registry.json",
+      "count": 2,
+      "latestId": "2026-04-13-21-47-53"
+    },
+    {
+      "folder": "gpt-4o-mini",
+      "label": "gpt-4o-mini",
+      "registry": "gpt-4o-mini/registry.json",
+      "count": 27,
+      "latestId": "2025-03-20-20-02-17"
+    }
+  ]
+}
