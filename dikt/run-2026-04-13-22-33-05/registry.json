@@ -4,90 +4,116 @@
     "date": "2026-04-13",
     "time": "22:36:26",
     "firstLine": "Stjerneblått te i en gammel skuff,",
-    "hasImage": true
+    "hasImage": true,
+    "phase1Model": "gpt-oss:120b-cloud",
+    "phase2Model": "gemma3"
   },
   {
     "id": "2026-04-13-22-36-15",
     "date": "2026-04-13",
     "time": "22:36:15",
     "firstLine": "En ensom skje i kaffekoppen,",
-    "hasImage": true
+    "hasImage": true,
+    "phase1Model": "gpt-oss:120b-cloud",
+    "phase2Model": "gemma3"
   },
   {
     "id": "2026-04-13-22-36-02",
     "date": "2026-04-13",
     "time": "22:36:02",
     "firstLine": "En ensom brødrister i lilla,",
-    "hasImage": true
+    "hasImage": true,
+    "phase1Model": "gpt-oss:120b-cloud",
+    "phase2Model": "gemma3"
   },
   {
     "id": "2026-04-13-22-35-46",
     "date": "2026-04-13",
     "time": "22:35:46",
     "firstLine": "En ensom tekopp i vindens sang,",
-    "hasImage": true
+    "hasImage": true,
+    "phase1Model": "gpt-oss:120b-cloud",
+    "phase2Model": "gemma3"
   },
   {
     "id": "2026-04-13-22-35-27",
     "date": "2026-04-13",
     "time": "22:35:27",
     "firstLine": "Et lite jordbær i en sky,",
-    "hasImage": true
+    "hasImage": true,
+    "phase1Model": "gpt-oss:120b-cloud",
+    "phase2Model": "gemma3"
   },
   {
     "id": "2026-04-13-22-35-13",
     "date": "2026-04-13",
     "time": "22:35:13",
     "firstLine": "En ensom sokk i skyenes kryp,",
-    "hasImage": true
+    "hasImage": true,
+    "phase1Model": "gpt-oss:120b-cloud",
+    "phase2Model": "gemma3"
   },
   {
     "id": "2026-04-13-22-34-57",
     "date": "2026-04-13",
     "time": "22:34:57",
     "firstLine": "En ensom tekanne i måneskinns‑glød,",
-    "hasImage": true
+    "hasImage": true,
+    "phase1Model": "gpt-oss:120b-cloud",
+    "phase2Model": "gemma3"
   },
   {
     "id": "2026-04-13-22-34-35",
     "date": "2026-04-13",
     "time": "22:34:35",
     "firstLine": "En ensom sokk på taket,",
-    "hasImage": true
+    "hasImage": true,
+    "phase1Model": "gpt-oss:120b-cloud",
+    "phase2Model": "gemma3"
   },
   {
     "id": "2026-04-13-22-34-24",
     "date": "2026-04-13",
     "time": "22:34:24",
     "firstLine": "En ensom sokk på taket,",
-    "hasImage": true
+    "hasImage": true,
+    "phase1Model": "gpt-oss:120b-cloud",
+    "phase2Model": "gemma3"
   },
   {
     "id": "2026-04-13-22-34-04",
     "date": "2026-04-13",
     "time": "22:34:04",
     "firstLine": "En ensom sokk på loftet,",
-    "hasImage": true
+    "hasImage": true,
+    "phase1Model": "gpt-oss:120b-cloud",
+    "phase2Model": "gemma3"
   },
   {
     "id": "2026-04-13-22-33-52",
     "date": "2026-04-13",
     "time": "22:33:52",
     "firstLine": "En lone krukke i skyens blå,",
-    "hasImage": true
+    "hasImage": true,
+    "phase1Model": "gpt-oss:120b-cloud",
+    "phase2Model": "gemma3"
   },
   {
     "id": "2026-04-13-22-33-37",
     "date": "2026-04-13",
     "time": "22:33:37",
     "firstLine": "Støv i en bokhylle,",
-    "hasImage": true
+    "hasImage": true,
+    "phase1Model": "gpt-oss:120b-cloud",
+    "phase2Model": "gemma3"
   },
   {
     "id": "2026-04-13-22-33-21",
     "date": "2026-04-13",
     "time": "22:33:21",
     "firstLine": "I en rusten tepose,",
-    "hasImage": true
+    "hasImage": true,
+    "phase1Model": "gpt-oss:120b-cloud",
+    "phase2Model": "gemma3"
   }
 ]

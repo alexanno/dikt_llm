@@ -4,13 +4,17 @@
     "date": "2026-04-13",
     "time": "21:56:03",
     "firstLine": "En liten maur med store plan,",
-    "hasImage": true
+    "hasImage": true,
+    "phase1Model": "gemma4:31b-cloud",
+    "phase2Model": "gemma3"
   },
   {
     "id": "2026-04-13-21-55-52",
     "date": "2026-04-13",
     "time": "21:55:52",
     "firstLine": "En rusten nøkkel i gresset lå,",
-    "hasImage": true
+    "hasImage": true,
+    "phase1Model": "gemma4:31b-cloud",
+    "phase2Model": "gemma3"
   }
 ]

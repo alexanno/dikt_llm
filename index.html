@@ -307,8 +307,11 @@
     entries.forEach(entry => {
       const card = document.createElement('div');
       card.className = 'card';
+      const phase1 = entry.phase1Model ? `P1: ${entry.phase1Model}` : null;
+      const phase2 = entry.phase2Model ? `P2: ${entry.phase2Model}` : null;
+      const phases = [phase1, phase2].filter(Boolean).join(' · ');
       card.innerHTML = `
-        <div class="card-date">${entry.date} · ${entry.time} · ${escapeHtml(entry.runLabel)}</div>
+        <div class="card-date">${entry.date} · ${entry.time} · ${escapeHtml(entry.runLabel)}${phases ? ` · ${escapeHtml(phases)}` : ''}</div>
         <div class="card-line">${escapeHtml(entry.firstLine)}</div>
         <div class="card-arrow">les dikt →</div>
       `;
@@ -317,8 +320,16 @@
     });
   }
 
+  function formatDetailId(entry) {
+    const base = `${entry.id} · ${entry.runLabel}`;
+    const phase1 = entry.phase1Model ? `P1: ${entry.phase1Model}` : null;
+    const phase2 = entry.phase2Model ? `P2: ${entry.phase2Model}` : null;
+    const phases = [phase1, phase2].filter(Boolean).join(' · ');
+    return phases ? `${base} · ${phases}` : base;
+  }
+
   async function openDikt(entry) {
-    document.getElementById('detail-id').textContent = `${entry.id} · ${entry.runLabel}`;
+    document.getElementById('detail-id').textContent = formatDetailId(entry);
     document.getElementById('detail-poem').textContent = 'Laster...';
     document.getElementById('detail-image').classList.add('hidden');
     document.getElementById('detail-code').textContent = '';

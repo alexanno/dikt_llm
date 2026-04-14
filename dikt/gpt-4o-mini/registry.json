@@ -4,188 +4,242 @@
     "date": "2025-03-20",
     "time": "20:02:17",
     "firstLine": "En enslig bølge i et hav av stillhet,",
-    "hasImage": true
+    "hasImage": true,
+    "phase1Model": "gpt-4o-mini",
+    "phase2Model": "gpt-4o-mini"
   },
   {
     "id": "2025-03-20-20-02-11",
     "date": "2025-03-20",
     "time": "20:02:11",
     "firstLine": "En fjern, mystisk sirkel, den har sin trøst",
-    "hasImage": true
+    "hasImage": true,
+    "phase1Model": "gpt-4o-mini",
+    "phase2Model": "gpt-4o-mini"
   },
   {
     "id": "2025-03-20-20-02-04",
     "date": "2025-03-20",
     "time": "20:02:04",
     "firstLine": "Vandringsmannen går som en linje,",
-    "hasImage": true
+    "hasImage": true,
+    "phase1Model": "gpt-4o-mini",
+    "phase2Model": "gpt-4o-mini"
   },
   {
     "id": "2025-03-20-20-01-59",
     "date": "2025-03-20",
     "time": "20:01:59",
     "firstLine": "På toppen av fjellet står en ensom katt,",
-    "hasImage": true
+    "hasImage": true,
+    "phase1Model": "gpt-4o-mini",
+    "phase2Model": "gpt-4o-mini"
   },
   {
     "id": "2025-03-20-20-01-51",
     "date": "2025-03-20",
     "time": "20:01:51",
     "firstLine": "En ensom stjerne lyser klart,",
-    "hasImage": true
+    "hasImage": true,
+    "phase1Model": "gpt-4o-mini",
+    "phase2Model": "gpt-4o-mini"
   },
   {
     "id": "2025-03-20-20-01-46",
     "date": "2025-03-20",
     "time": "20:01:46",
     "firstLine": "En mystisk kurve på en eng,",
-    "hasImage": true
+    "hasImage": true,
+    "phase1Model": "gpt-4o-mini",
+    "phase2Model": "gpt-4o-mini"
   },
   {
     "id": "2025-03-20-20-01-41",
     "date": "2025-03-20",
     "time": "20:01:41",
     "firstLine": "Under et tre, så høyt og blått,",
-    "hasImage": true
+    "hasImage": true,
+    "phase1Model": "gpt-4o-mini",
+    "phase2Model": "gpt-4o-mini"
   },
   {
     "id": "2025-03-20-20-01-35",
     "date": "2025-03-20",
     "time": "20:01:35",
     "firstLine": "Under stjerneskinnets milde lys,",
-    "hasImage": true
+    "hasImage": true,
+    "phase1Model": "gpt-4o-mini",
+    "phase2Model": "gpt-4o-mini"
   },
   {
     "id": "2025-03-20-20-01-30",
     "date": "2025-03-20",
     "time": "20:01:30",
     "firstLine": "I tåken danser tallenes lek,",
-    "hasImage": true
+    "hasImage": true,
+    "phase1Model": "gpt-4o-mini",
+    "phase2Model": "gpt-4o-mini"
   },
   {
     "id": "2025-03-20-20-01-25",
     "date": "2025-03-20",
     "time": "20:01:25",
     "firstLine": "I en verden av linjer og tall,",
-    "hasImage": true
+    "hasImage": true,
+    "phase1Model": "gpt-4o-mini",
+    "phase2Model": "gpt-4o-mini"
   },
   {
     "id": "2025-03-20-20-01-20",
     "date": "2025-03-20",
     "time": "20:01:20",
     "firstLine": "Under stjernehimlenes skjold,",
-    "hasImage": true
+    "hasImage": true,
+    "phase1Model": "gpt-4o-mini",
+    "phase2Model": "gpt-4o-mini"
   },
   {
     "id": "2025-03-20-20-01-15",
     "date": "2025-03-20",
     "time": "20:01:15",
     "firstLine": "Langs en snirklete sti gikk en gammel maur,",
-    "hasImage": true
+    "hasImage": true,
+    "phase1Model": "gpt-4o-mini",
+    "phase2Model": "gpt-4o-mini"
   },
   {
     "id": "2025-03-20-20-01-10",
     "date": "2025-03-20",
     "time": "20:01:10",
     "firstLine": "I et fjell bor en mystisk torn,",
-    "hasImage": true
+    "hasImage": true,
+    "phase1Model": "gpt-4o-mini",
+    "phase2Model": "gpt-4o-mini"
   },
   {
     "id": "2025-03-20-20-01-04",
     "date": "2025-03-20",
     "time": "20:01:04",
     "firstLine": "Blått hav og røde stjerner,",
-    "hasImage": true
+    "hasImage": true,
+    "phase1Model": "gpt-4o-mini",
+    "phase2Model": "gpt-4o-mini"
   },
   {
     "id": "2025-03-20-20-00-58",
     "date": "2025-03-20",
     "time": "20:00:58",
     "firstLine": "En skog av tall, der trærne stiger,",
-    "hasImage": true
+    "hasImage": true,
+    "phase1Model": "gpt-4o-mini",
+    "phase2Model": "gpt-4o-mini"
   },
   {
     "id": "2025-03-20-20-00-54",
     "date": "2025-03-20",
     "time": "20:00:54",
     "firstLine": "En klatt med maling, gul og rød,",
-    "hasImage": true
+    "hasImage": true,
+    "phase1Model": "gpt-4o-mini",
+    "phase2Model": "gpt-4o-mini"
   },
   {
     "id": "2025-03-20-20-00-43",
     "date": "2025-03-20",
     "time": "20:00:43",
     "firstLine": "---",
-    "hasImage": true
+    "hasImage": true,
+    "phase1Model": "gpt-4o-mini",
+    "phase2Model": "gpt-4o-mini"
   },
   {
     "id": "2025-03-20-20-00-39",
     "date": "2025-03-20",
     "time": "20:00:39",
     "firstLine": "En kalkulator på rommets vakt,",
-    "hasImage": true
+    "hasImage": true,
+    "phase1Model": "gpt-4o-mini",
+    "phase2Model": "gpt-4o-mini"
   },
   {
     "id": "2025-03-20-20-00-32",
     "date": "2025-03-20",
     "time": "20:00:32",
     "firstLine": "I en skog av tall, der kurver bor,",
-    "hasImage": true
+    "hasImage": true,
+    "phase1Model": "gpt-4o-mini",
+    "phase2Model": "gpt-4o-mini"
   },
   {
     "id": "2025-03-20-19-58-19",
     "date": "2025-03-20",
     "time": "19:58:19",
     "firstLine": "I det dype på havets bunn,",
-    "hasImage": true
+    "hasImage": true,
+    "phase1Model": "gpt-4o-mini",
+    "phase2Model": "gpt-4o-mini"
   },
   {
     "id": "2025-03-20-19-58-15",
     "date": "2025-03-20",
     "time": "19:58:15",
     "firstLine": "I et univers av tilfeldighet, uforutsigbarhetens øy,",
-    "hasImage": true
+    "hasImage": true,
+    "phase1Model": "gpt-4o-mini",
+    "phase2Model": "gpt-4o-mini"
   },
   {
     "id": "2025-03-20-19-58-10",
     "date": "2025-03-20",
     "time": "19:58:10",
     "firstLine": "I en dal der solen står,",
-    "hasImage": true
+    "hasImage": true,
+    "phase1Model": "gpt-4o-mini",
+    "phase2Model": "gpt-4o-mini"
   },
   {
     "id": "2025-03-20-19-58-05",
     "date": "2025-03-20",
     "time": "19:58:05",
     "firstLine": "En løvetann blåser kloden rundt,",
-    "hasImage": true
+    "hasImage": true,
+    "phase1Model": "gpt-4o-mini",
+    "phase2Model": "gpt-4o-mini"
   },
   {
     "id": "2025-03-20-19-52-51",
     "date": "2025-03-20",
     "time": "19:52:51",
     "firstLine": "I mørket lyser stjerners dans,",
-    "hasImage": true
+    "hasImage": true,
+    "phase1Model": "gpt-4o-mini",
+    "phase2Model": "gpt-4o-mini"
   },
   {
     "id": "2025-03-20-19-52-47",
     "date": "2025-03-20",
     "time": "19:52:47",
     "firstLine": "En fisk som danser på havets bunn,",
-    "hasImage": true
+    "hasImage": true,
+    "phase1Model": "gpt-4o-mini",
+    "phase2Model": "gpt-4o-mini"
   },
   {
     "id": "2025-03-20-19-45-27",
     "date": "2025-03-20",
     "time": "19:45:27",
     "firstLine": "I en skog av tanker så dyp,",
-    "hasImage": true
+    "hasImage": true,
+    "phase1Model": "gpt-4o-mini",
+    "phase2Model": "gpt-4o-mini"
   },
   {
     "id": "2025-03-20-19-44-09",
     "date": "2025-03-20",
     "time": "19:44:09",
     "firstLine": "Frosken kvakker, himmelen lyser,",
-    "hasImage": true
+    "hasImage": true,
+    "phase1Model": "gpt-4o-mini",
+    "phase2Model": "gpt-4o-mini"
   }
 ]
